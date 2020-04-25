@@ -1,0 +1,16 @@
+#menu-container {
+  padding: 24px 48px 0 48px;
+  #restaurant-info {
+    padding-bottom: 24px;
+    #title {
+      font-size: 36px;
+    }
+    #category {
+      color: gray;
+    }
+  }
+  #menu-items-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
