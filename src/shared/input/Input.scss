@@ -1,0 +1,63 @@
+$color: #80868b;
+$active-color: #1a73e8;
+$input-value-color: #202124;
+$border-color: 1px solid #dadce0;   
+
+.input {
+
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    color: $input-value-color;
+    border: $border-color;
+    padding: 13px 15px;
+
+    transition: 250ms;
+    &:focus {
+      outline: none;
+      border: 2px solid #1a73e8;
+      transition: 250ms;
+    }
+    
+    &__box {
+        position: absolute;
+        color: #80868b;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: calc(100% - (2 * 8px));
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        left: 8px;
+        top: 13px;
+        padding: 0 8px;
+        transition: 250ms;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &__label {
+        position: absolute;
+        color: $color;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: calc(100% - (2 * 8px));
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        left: 8px;
+        top: 13px;
+        padding: 0 8px;
+        transition: 250ms;
+        user-select: none;
+        pointer-events: none;
+        svg {
+          position: relative;
+          width: 15px;
+          height: 15px;
+          top: 2px;
+          transition: 250ms;
+        }
+    }   
+}

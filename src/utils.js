@@ -28,3 +28,25 @@ export const fetchResourse = async (resource, method, callback, body=false) => {
         console.log(err)
     }
 }
+
+
+const useToggleScreen = (screens) => {
+
+    const screensKeys = screens
+    const initialScreenIndex = 0
+    const lastIndex = screensKeys.length - 1
+  
+  
+    const [currentScreenIndex, setScreenIndex] = useState(initialScreenIndex)
+  
+    const toggleScreen = () => {
+      if (currentScreenIndex === lastIndex) setScreenIndex(initialScreenIndex)
+  
+      setScreenIndex(currentScreenIndex + 1)
+    }
+  
+    const screen = screens[currentScreenIndex]
+  
+  
+    return [screen, toggleScreen]
+  }

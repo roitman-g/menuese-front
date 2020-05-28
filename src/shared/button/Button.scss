@@ -1,0 +1,21 @@
+.button {
+
+    border: solid 1px;
+    border-radius: 3px;
+    height: 40px;
+    width: 240px;
+    background-color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(255, 251, 251);
+    }
+
+    &_disabled {
+        cursor: default;
+    }
+   
+    &:focus {
+        outline: 0;
+    }
+}

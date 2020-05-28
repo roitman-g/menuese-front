@@ -1,0 +1,14 @@
+.entity {
+    // display: none; /* Hidden by default */
+    position: relative;
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 70%; /* Full height */
+    margin: 0 auto;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white; /* Fallback color */
+    background-color: white; /* Black w/ opacity */
+}
